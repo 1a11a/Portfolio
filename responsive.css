@@ -1,0 +1,35 @@
+/* Desktop styles */
+.container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 750px;
+        padding: 0 15px;
+    }
+    .about-col-1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 450px;
+        padding: 0 10px;
+    }
+    .about-col-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .tab {
+        display: none;
+    }
+    .tabcontent {
+        display: block;
+    }
+}

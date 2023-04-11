@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/Bacground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+ nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+ 
+ nav ul li a ::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+ }
+
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+ 
+ .heder-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+ }
+ .heder-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+ }
+
+ #about{
+     padding: 80px 0;
+     color: #ababab;
+     
+
+ }
+
+ .raw  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .about-col-1 img {
+    
+    border-radius: 15px;
+    width: 300px;
+    
+    
+ }
+
+ .about-col-2 {
+    flex-basis: 75%;
+    
+ }
+ .about-col-2 .p{
+    font-weight: 1rem;
+  
+ }
+ .sub-tittle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+ }
+ .tab {
+   display: flex;
+   
+    
+}
+
+
+
+/* Style the buttons inside the tab */
+.tab p {
+   margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.tab p::after{
+	content: '';
+    width: 0;
+    height: 3px;
+
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    transition: 0.5s;
+    }
+
+   .tablinks{
+      text-align: center;
+   }
+
+
+
+/* Create an active/current "tab button" class */
+.tab p.active {
+	border-bottom: 3px solid #ff004f;
+    left: 0;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  
+  width: 70%;
+  
+  height: 300px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ .tabcontent ul li span{
+    color: rgb(202, 24, 0);
+    font-size: 14px;
+ }
+ .tabcontent {
+    display: none;
+ }
+ .tabcontent.active-tab{
+    display: block;
+ }
+
+ .sub-t{
+   text-align: center;
+   margin: 5rem;
+ }
+  
+
+ footer {
+   text-align: center;
+   padding: 2px;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+ }
+
+.serv-content{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: space-between;
+   justify-content: space-evenly;
+   align-items: stretch;
+   margin-top: 2rem;
+}
+.container1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%; /* Set the container's height to 100% of the viewport */
+   
+   }
+button {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   cursor: pointer;
+   outline: none;
+   border: none;
+   background: transparent;
+   display: flex;
+justify-content: center;
+align-items: center;
+ }
+.box {
+   width: 160px;
+   height: auto;
+   float: left;
+   transition: .5s linear;
+   position: relative;
+   display: block;
+   overflow: hidden;
+   padding: 15px;
+   text-align: center;
+   margin: 0 5px;
+   background: transparent;
+   text-transform: uppercase;
+   font-weight: 900;
+ }
+ 
+ .box:before {
+   position: absolute;
+   content: '';
+   left: 0;
+   bottom: 0;
+   height: 4px;
+   width: 100%;
+   border-bottom: 4px solid transparent;
+   border-left: 4px solid transparent;
+   box-sizing: border-box;
+   transform: translateX(100%);
+ }
+ 
+ .box:after {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   border-top: 4px solid transparent;
+   border-right: 4px solid transparent;
+   box-sizing: border-box;
+   transform: translateX(-100%);
+ }
+ 
+ .box:hover {
+   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+ }
+ 
+ .box:hover:before {
+   border-color: #ffffff;
+   height: 100%;
+   transform: translateX(0);
+   transition: .3s transform linear, .3s height linear .3s;
+ }
+ 
+ .box:hover:after {
+   border-color: #ffffff;
+   height: 100%;
+   transform: translateX(0);
+   transition: .3s transform linear, .3s height linear .5s;
+ }
+ 
+
+ .card {
+   width: 15rem;
+   cursor: pointer;
+ }
+ 
+ .content {
+   text-align: center;
+   position: relative;
+   transition: all 2.25s;
+   background-color: rgb(127, 204, 240);
+   padding: 5em;
+   transform-style: preserve-3d;
+ }
+ 
+ .card:hover .content {
+   transform: rotateY(0.5turn);
+ }
+ 
+ .front,
+ .back {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   padding: 2em;
+   transform-style: preserve-3d;
+   backface-visibility: hidden;
+ }
+ 
+ .title {
+   transform: translateZ(5rem);
+   font-size: 2rem;
+ }
+ 
+ .subtitle {
+   transform: translateZ(2rem);
+ }
+ 
+ .back {
+   transform: rotateY(0.5turn);
+   background-color: #009bff;
+ }
+ 
+ .description {
+   transform: translateZ(3rem);
+ }
+ 
+ /*------------------------*/
+
+ .mcard {
+   --background: linear-gradient(to left, #2b5bf7 0%, #5362ea 100%);
+   width: 190px;
+   height: 200px;
+   padding: 5px;
+   border-radius: 1rem;
+   overflow: visible;
+   background: #2b50f7;
+   background: var(--background);
+   position: relative;
+   z-index: 1;
+  }
+  
+  .mcard::after {
+   position: absolute;
+   content: "";
+   top: 30px;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+   transform: scale(0.8);
+   filter: blur(25px);
+   background: #2b4af7;
+   background: var(--background);
+   transition: opacity .5s;
+  }
+  
+  .mcard-info {
+   --color: #000000;
+   background: var(--color);
+   color: var(--color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   overflow: visible;
+   border-radius: .7rem;
+  }
+  
+  .mcard .title {
+   font-weight: bold;
+   letter-spacing: .1em;
+   text-align: center;
+  }
+  
+  /*Hover*/
+  .mcard:hover::after {
+   opacity: 0;
+  }
+  
+  .mcard:hover .mcard-info {
+   color: #ffffff;
+   transition: color 1s;
+  }
+  
+
+
+
+
+
+
+
+
+
+  
