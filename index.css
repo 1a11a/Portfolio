@@ -174,7 +174,14 @@ nav ul li{
    text-align: center;
    margin: 5rem;
  }
+
+.list li {
+   padding: 0.5rem;
+}
   
+.social a{
+   padding: 1rem;
+}
 
  footer {
    text-align: center;
