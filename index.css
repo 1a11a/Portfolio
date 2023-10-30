@@ -8,7 +8,10 @@ body{
     background: #080808;
     color: #fff;
 }
-
+.contact{
+  background-color: rgb(102, 102, 102);
+  color: rgb(255, 253, 253);
+}
 
 #header{
     width: 100%;
@@ -175,7 +178,7 @@ nav ul li{
    margin: 5rem;
  }
 
-.list li {
+.list p {
    padding: 0.5rem;
 }
   
@@ -287,7 +290,7 @@ align-items: center;
    text-align: center;
    position: relative;
    transition: all 2.25s;
-   background-color: rgb(127, 204, 240);
+   background-color: rgb(0, 0, 0);
    padding: 5em;
    transform-style: preserve-3d;
  }
@@ -311,6 +314,7 @@ align-items: center;
  .title {
    transform: translateZ(5rem);
    font-size: 2rem;
+   color: #ffffff;
  }
  
  .subtitle {
@@ -319,76 +323,114 @@ align-items: center;
  
  .back {
    transform: rotateY(0.5turn);
-   background-color: #009bff;
+   background-color: #ffffff;
  }
  
  .description {
    transform: translateZ(3rem);
+   color: #000000;
  }
  
+
+ .scroll-up-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 70px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6e6e6e;
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.scroll-up-btn.show {
+  display: block;
+}
+
  /*------------------------*/
 
- .mcard {
-   --background: linear-gradient(to left, #2b5bf7 0%, #5362ea 100%);
-   width: 190px;
-   height: 200px;
-   padding: 5px;
-   border-radius: 1rem;
-   overflow: visible;
-   background: #2b50f7;
-   background: var(--background);
-   position: relative;
-   z-index: 1;
-  }
+
   
-  .mcard::after {
+
+
+
+
+
+
+  .card2 {
+   position: relative;
+   width: 220px;
+   height: 320px;
+   background: rgb(0, 0, 0);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   font-weight: bold;
+   border-radius: 15px;
+   cursor: pointer;
+ }
+ 
+ .card2::before,
+ .card2::after {
    position: absolute;
    content: "";
-   top: 30px;
-   left: 0;
-   right: 0;
-   z-index: -1;
-   height: 100%;
-   width: 100%;
-   transform: scale(0.8);
-   filter: blur(25px);
-   background: #2b4af7;
-   background: var(--background);
-   transition: opacity .5s;
-  }
-  
-  .mcard-info {
-   --color: #000000;
-   background: var(--color);
-   color: var(--color);
+   width: 20%;
+   height: 20%;
    display: flex;
-   justify-content: center;
    align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   font-weight: bold;
+   background-color: rgb(255, 255, 255);
+   transition: all 0.5s;
+ }
+ 
+ .card2::before {
+   top: 0;
+   right: 0;
+   border-radius: 0 15px 0 100%;
+ }
+ 
+ .card2::after {
+   bottom: 0;
+   left: 0;
+   border-radius: 0 100%  0 15px;
+   
+ }
+ 
+ .card2:hover::before,
+ .card2:hover:after {
    width: 100%;
    height: 100%;
-   overflow: visible;
-   border-radius: .7rem;
-  }
-  
-  .mcard .title {
-   font-weight: bold;
-   letter-spacing: .1em;
-   text-align: center;
-  }
-  
-  /*Hover*/
-  .mcard:hover::after {
-   opacity: 0;
-  }
-  
-  .mcard:hover .mcard-info {
-   color: #ffffff;
-   transition: color 1s;
-  }
-  
-
-
-
+   border-radius: 15px;
+   transition: all 0.5s;
+ }
+ .card2:hover:after{
+  color: #000000;
+ }
+ 
+ .C1:hover:after {
+   content: "Developing";
+ }
+ .C2:hover:after {
+   content: "Designer";
+ }
+ .C3:hover:after {
+   content: "Programmer";
+ }
+ .C4:hover:after {
+   content: "Creator";
+ }
+ .C5:hover:after {
+   content: "HELLO";
+ }
 
 
 
